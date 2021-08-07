@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
             val faltas = Integer.parseInt(faltas.text.toString())
             val media: Float = round((nota1 + nota2)*100)/200
 
-            if(media >= 6 && faltas <= 10) {
+            if(media >= 5 && faltas <= 10) {
                 resultado.setText("Você foi aprovado\nMédia: $media \nFaltas: $faltas")
                 resultado.setTextColor(Color.BLUE)
             }
